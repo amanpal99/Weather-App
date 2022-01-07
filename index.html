@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="shortcut icon" type="image/png" href="src/img/favicon.png" />
+    <link rel="stylesheet" href="src/style.css" />
+    <script type="module" src="src/script.js"></script>
+    <!-- <script defer type="module" src="src/rain.js"></script> -->
+  </head>
+  <body>
+    <canvas class="canvas" width="1535px" height="753px"></canvas>
+    <section class="container">
+      <header class="search-bar">
+        <input type="text" id="search" />
+        <button class="search">search</button>
+      </header>
+      <div class="loc"></div>
+      <div class="block">
+        <img
+          src="src/img/partly-cloudy.png"
+          crossorigin="anonymous"
+          alt=""
+          id="icon"
+        />
+        <h6 class="desc">It's Sunny</h6>
+        <div class="temp-unit">
+          <span class="temp">20</span>
+          <div class="unit">
+            <span class="cel">&#176;C</span>
+            <!-- <span class="far">&#176;F</span> -->
+          </div>
+        </div>
+        <div class="etc-details">
+          <div class="wind">
+            <span class="etc-icon"><img src="src/img/wind.png" alt="" /></span>
+            <span class="w-speed">100km/h</span>
+          </div>
+          <div class="humid">
+            <span class="etc-icon"><img src="src/img/humid.png" alt="" /></span>
+            <span class="h-perc">60%</span>
+          </div>
+        </div>
+      </div>
+      <div class="forecast">
+        <ul class="days">
+          <li class="day1 active-day">Today</li>
+          <li class="day2">Tomorrow</li>
+          <li class="day3">25 Dec</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- animation option -->
+    <aside class="animate">
+      <span class="text">Animate</span>
+      <input type="checkbox" name="switch" id="ani-switch" />
+      <label for="ani-switch" id="ani-label"></label>
+    </aside>
+
+    <!-- goToMap option -->
+    <aside class="gotomap">
+      <span class="mtext">Map</span>
+      <input type="checkbox" name="switch" id="map-switch" />
+      <label for="map-switch" id="map-label"></label>
+    </aside>
+
+    <!-- Clouds -->
+    <div class="cloud-div">
+      <div class="cloud one"></div>
+      <div class="cloud"></div>
+    </div>
+    <!-- sun -->
+    <div>
+      <div class="sun"></div>
+      <div class="moon"></div>
+    </div>
+
+    <!-- Fog/Mist -->
+    <div class="fog-mist">
+      <div id="foglayer_01" class="fog">
+        <div class="image01"></div>
+        <div class="image02"></div>
+      </div>
+      <div id="foglayer_02" class="fog">
+        <div class="image01"></div>
+        <div class="image02"></div>
+      </div>
+      <div id="foglayer_03" class="fog">
+        <div class="image01"></div>
+        <div class="image02"></div>
+      </div>
+    </div>
+  </body>
+</html>

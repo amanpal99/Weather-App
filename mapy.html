@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="shortcut icon" type="image/png" href="src/img/favicon.png" />
+
+    <!-- leaflet -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+
+    <link rel="stylesheet" href="src/mapy-style.css" />
+    <script defer type="module" src="src/mapy-script.js"></script>
+  </head>
+  <body>
+    <h1 class="loc">Jalandhar</h1>
+    <div class="container">
+      <header class="header"></header>
+      <div id="map"></div>
+      <footer class="credits"></footer>
+    </div>
+
+    <!-- POPUP -->
+    <!-- <div class="popup">
+      <header class="head">
+        <img src="src/img/partly-cloudy.png" alt="" class="icon" />
+        <h3 class="temp">20&#176;</h3>
+      </header>
+      <section class="body">
+        <div class="wind">
+          <img src="src/img/wind.png" alt="" class="e-icon" />
+          <h6 class="w-speed">120Km/h</h6>
+        </div>
+        <div class="humid">
+          <img src="src/img/humid.png" alt="" class="e-icon" />
+          <h6 class="h-perc">50%</h6>
+        </div>
+      </section>
+    </div> -->
+  </body>
+</html>

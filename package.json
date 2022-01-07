@@ -1,0 +1,21 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "display weather details",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Aman",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-image": "^2.0.0-rc.0",
+    "parcel": "^2.0.0-rc.0"
+  },
+  "dependencies": {
+    "core-js": "^3.19.3",
+    "regenerator-runtime": "^0.13.9",
+    "require": "^2.4.20"
+  }
+}
